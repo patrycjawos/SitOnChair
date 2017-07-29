@@ -3,27 +3,34 @@
 	width: 100%;
 	max-width: 900px;
 	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+
 }
 .row::after{
 	content: ' ';
 	display: block;
 	clear:both;
 }
+
+.col{
+	float:left;
+}
+/* SECTION HEADER*/
+
 header {
 	background: black;
 }
-header h1{
-text-transform: uppercase;
-margin: 10px;
-
-color:white;
+header h1 {
+	text-transform: uppercase;
+	margin: 10px;
+	color:white;
 }
 span{
-	color: green;
+	color: #38c3ad;
 }
-
 header nav.col{
 	float: right;
+	padding-top: 10px;
 }
 header li{
 	display: inline-block;
@@ -31,80 +38,158 @@ header li{
 header a {
 	color: white;
 	text-decoration: none;
+	text-transform: uppercase;
 	margin-right: 25px;
 }
-/*CONTENT*/
+/* SECTION CONTENT- TUTAJ SA STRZALKI KRZESLO TEKST*/
 
 section.content {
-	margin: 20px;
-}
-section.content .col{
-
-	min-height: 150px;
-}
-section div.container{
+	/*margin: 20px;*/
 	background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
-background: #eeeeee; /* Old browsers */
-background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+section.content .col {
+	min-height: 250px;
 }
 section div.col{
 	float:left;
 	text-align: center;
+	padding-top: 40px;
 }
 section div.col:nth-of-type(2){
 	 background: url(../images/black_chair.png) no-repeat center/cover;
-	 width: 30%;
+	 width: 40%;
 }
 section div.col:nth-of-type(3){
-	width: 30%;
+	width: 40%;
 }
-
-div.col:first-child, div.col:first-child{
-	width: 10%
+div.col:first-child, div.col:last-child{
+	width: 10%;
+	padding-top: 100px;
 }
-section div.col:last-of-type;{
-	float: right;
-}
-section h3{
+section h3 {
 	text-transform: uppercase;
 }
-section a{
+section a {
 	color: white;
-	background: green;
+	background: #38c3ad;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 2px;
 	border-radius: 10%;
 	text-decoration: none;
 }
-
-/* DRUGA SEKCJA*/
+section div.col:first-child:before {
+    content: "";
+    display:block;
+    width:30px;
+    height: 30px;
+    border-left: 5px solid #38c3ad;
+    border-bottom: 5px solid #38c3ad;
+    transform: rotate(45deg);
+}
+section div.col:last-child:after {
+    content: "";
+    display:block;
+    width:30px;
+    height: 30px;
+    border-right: 5px solid #38c3ad;
+    border-top: 5px solid #38c3ad;
+    transform: rotate(45deg);
+}
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* SEKCJA CONTENT_1 ta z trzema divami obok siebie */
 
 section.content_1 {
 	margin: 20px;
-	position: relative;
 }
-section.content_1 .col_box{
-	width: 33 %;
-	min-height: 150px;
+
+section.content_1 .col_box,
+section.content_1 .col_box_1{
+	width: 30%;
+      float: left;
+      border: 1px solid grey;
+      margin-right: 20px;
+      min-height: 250px;
 }
 section.content_1 div.container{
 background: white;
 }
-div.col_box, div.col_box_1{
-	width: 30%
-}
-
 section div.col_box:first-child{
 	background: url(../images/box1_img.jpg) no-repeat center/cover;
-	/*position:absolute;
-	top: 50px;
-	left: 10px;*/
 }
 section div.col_box:nth-child(2){
 	background: url(../images/box2_img.jpg) no-repeat center/cover;
-	/*position: absolute;
-	top: 50px;*/
 }
+section.content_1 span{
+    content: "";
+    display:block;
+    width:150px;
+    height: 5px;
+    background: #38c3ad;
+}
+/* SECTION CENNIK */
+div.col_box_1,
+div.col_box_2,
+div.col_box_3 {
+	border: 3px solid grey;
+	float:left;
+	margin-right: 20px;
+	width: 30%;
+	min-height: 150px;
+	text-align: center;
+}
+section.content_cennik.col{
+	float:left;
+	margin: 0 auto;
+	position: relative;
+}
+section.content_cennik{
+	background: lightgrey;
+}
+section.content_cennik h1{
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+section.content_cennik span{
+    content: "";
+    display:block;
+    width:150px;
+    height: 5px;
+    background: #38c3ad;
+    }
+section.content_cennik.container{
+	display: inline-block;
+	position: relative;
+
+}
+section.content_cennik div.cirle{
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border: 2px solid grey;
+	border-radius: 50%;
+	position: absolute;
+	left: calc(30% - 150px);
+}
+ section.content_cennik div.circle_1{
+	width: 50%;
+    	height: 50%;
+    	background: #000;
+    	border-radius: 50%;
+    	margin: 11px auto;
+    }
+
+
+
+
+
+
+/*SECTION FORMULARZ*/
+/* FOOTER*/
