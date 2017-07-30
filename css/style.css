@@ -104,21 +104,21 @@ h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-/* SEKCJA CONTENT_1 ta z trzema divami obok siebie */
+/* SEKCJA content_photo_chair ta z trzema divami obok siebie */
 
-section.content_1 {
+section.content_photo_chair {
 	margin: 20px;
 }
 
-section.content_1 .col_box,
-section.content_1 .col_box_1{
+section.content_photo_chair .col_box,
+section.content_photo_chair .col_box_1{
 	width: 30%;
       float: left;
       border: 1px solid grey;
       margin-right: 20px;
       min-height: 250px;
 }
-section.content_1 div.container{
+section.content_photo_chair div.container{
 background: white;
 }
 section div.col_box:first-child{
@@ -127,7 +127,7 @@ section div.col_box:first-child{
 section div.col_box:nth-child(2){
 	background: url(../images/box2_img.jpg) no-repeat center/cover;
 }
-section.content_1 span{
+section.content_photo_chair span{
     content: "";
     display:block;
     width:150px;
@@ -145,31 +145,31 @@ div.col_box_3 {
 	min-height: 150px;
 	text-align: center;
 }
-section.content_cennik.col{
+section.content_price_list.col{
 	float:left;
 	margin: 0 auto;
 	position: relative;
 }
-section.content_cennik{
+section.content_price_list{
 	background: lightgrey;
 }
-section.content_cennik h1{
+section.content_price_list h1{
 	text-transform: uppercase;
 	padding-top: 20px;
 }
-section.content_cennik span{
+section.content_price_list span{
     content: "";
     display:block;
     width:150px;
     height: 5px;
     background: #38c3ad;
     }
-section.content_cennik.container{
+section.content_price_list.container{
 	display: inline-block;
 	position: relative;
 
 }
-section.content_cennik div.cirle{
+section.content_price_list div.cirle{
 	background: #fff;
 	width: 50px;
 	height: 50px;
@@ -178,7 +178,7 @@ section.content_cennik div.cirle{
 	position: absolute;
 	left: calc(30% - 150px);
 }
- section.content_cennik div.circle_1{
+ section.content_price_list div.circle_1{
 	width: 50%;
     	height: 50%;
     	background: #000;
@@ -186,10 +186,26 @@ section.content_cennik div.cirle{
     	margin: 11px auto;
     }
 
-
-
-
-
-
 /*SECTION FORMULARZ*/
+section.content_form div.form_1,
+section.content_form div.form_2{
+	width: 50%;
+}
+
+section.content_form h1{
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+section.content_form span{
+    content: "";
+    display:block;
+    width:150px;
+    height: 5px;
+    background: #38c3ad;
+    }
+
 /* FOOTER*/
+footer {
+	margin-top: 20px;
+
+}
